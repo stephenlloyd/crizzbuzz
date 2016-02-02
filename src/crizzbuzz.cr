@@ -6,7 +6,7 @@ module Crizzbuzz
     value = ""
     value += "Crizz" if self.is_divisible_by_three?(number)
     value += "Buzz" if self.is_divisible_by_five?(number)
-    value += "#{number}" if value.empty?
+    value += number.to_s if value.empty?
     return value
   end
 
